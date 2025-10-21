@@ -83,14 +83,14 @@ Modern forum software is either too complex, too expensive, or restricts your fr
 
 ## 🗺️ Roadmap
 
-### ✅ Phase 1: Core Infrastructure (Completing)
+### ✅ Phase 1: Core Infrastructure (Completed)
 - [x] Project architecture design
 - [x] MVC-like structure creation
 - [x] Database schema design
 - [x] Core system components
 - [x] Routing system
 
-### 🔄 Phase 2: User System (In Development)
+### 🔄 Phase 2: User System (Completing)
 - [ ] Registration and login system
 - [ ] Email verification
 - [ ] Password reset
