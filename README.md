@@ -324,7 +324,7 @@ You can find the full text of the license in the [LICENSE](LICENSE) file.
 
 Don't forget to give a ⭐ to support the project!
 
-[![Stargazers over time](https://starchart.cc/bnsware/zunvo.svg)](https://starchart.cc/bnsware/zunvo)
+[![Stargazers over time](https://starchart.cc/bnsware/Zunvo.svg?variant=adaptive)](https://starchart.cc/bnsware/Zunvo)
 
 ---
 
