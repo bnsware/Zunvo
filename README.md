@@ -90,7 +90,7 @@ Modern forum software is either too complex, too expensive, or restricts your fr
 - [x] Core system components
 - [x] Routing system
 
-### 🔄 Phase 2: User System (Completing)
+### 🔄 Phase 2: User System (In Development)
 - [ ] Registration and login system
 - [ ] Email verification
 - [ ] Password reset
