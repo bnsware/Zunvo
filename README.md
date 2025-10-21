@@ -86,9 +86,9 @@ Modern forum software is either too complex, too expensive, or restricts your fr
 ### ✅ Phase 1: Core Infrastructure (Completing)
 - [x] Project architecture design
 - [x] MVC-like structure creation
-- [ ] Database schema design
-- [ ] Core system components
-- [ ] Routing system
+- [x] Database schema design
+- [x] Core system components
+- [x] Routing system
 
 ### 🔄 Phase 2: User System (In Development)
 - [ ] Registration and login system
