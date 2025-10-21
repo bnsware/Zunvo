@@ -21,7 +21,7 @@
 
 Zunvo is currently under active development. The first stable release is coming soon!
 
-**🎯 Estimated First Release:** Q2 2025
+**🎯 Estimated First Release:** Q2 2026
 
 **⭐ Star the project to stay updated on the first release!**
 
