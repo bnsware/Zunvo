@@ -324,7 +324,7 @@ Lisansın tam metnini [LICENSE](LICENSE) dosyasında bulabilirsiniz.
 
 Projeyi desteklemek için ⭐ vermeyi unutmayın!
 
-[![Stargazers over time](https://starchart.cc/bnsware/Zunvo.svg)](https://starchart.cc/bnsware/Zunvo)
+[![Stargazers over time](https://starchart.cc/bnsware/Zunvo.svg?variant=adaptive)](https://starchart.cc/bnsware/Zunvo)
 
 ---
 
