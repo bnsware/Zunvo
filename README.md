@@ -261,10 +261,10 @@ themes/my-theme/
 
 ## 💬 Community & Support
 
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/yourusername/zunvo/discussions)
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/yourusername/zunvo/issues)
-- 📧 **Email:** info@zunvo.org
-- 🌐 **Website:** https://zunvo.org (coming soon)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/bnsware/zunvo/discussions)
+- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/bnsware/zunvo/issues)
+- 📧 **Email:** info@vixware.net
+- 🌐 **Website:** https://zunvo.com (coming soon)
 
 ---
 
@@ -274,7 +274,7 @@ themes/my-theme/
 Lines of Code:    ~15,000 (target)
 Number of Files:  ~150+
 Languages:        PHP, JavaScript, CSS
-Development Time: 6+ months (ongoing)
+Development Time: (ongoing)
 Contributors:     Waiting...
 ```
 
