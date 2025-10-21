@@ -1,0 +1,125 @@
+# Zunvo Forum Sistemi
+# Apache URL Rewriting ve Güvenlik Ayarları
+
+# Rewrite Engine'i aktif et
+RewriteEngine On
+
+# Eğer istenen dosya veya klasör gerçekten varsa, yönlendirme yapma
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tüm istekleri index.php'ye yönlendir
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Directory listing'i engelle
+Options -Indexes
+
+# PHP ayarları
+<IfModule mod_php7.c>
+    # Error reporting'i kapat (production)
+    php_flag display_errors Off
+    
+    # Session güvenliği
+    php_flag session.cookie_httponly On
+    
+    # File upload limitleri
+    php_value upload_max_filesize 5M
+    php_value post_max_size 6M
+    php_value memory_limit 128M
+    
+    # Zaman limiti
+    php_value max_execution_time 30
+</IfModule>
+
+# Güvenlik başlıkları
+<IfModule mod_headers.c>
+    # XSS koruması
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Clickjacking koruması
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Content type sniffing koruması
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Referrer policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Dosya erişim kısıtlamaları
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Config dosyalarına erişimi engelle
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "database.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Cache ayarları (static dosyalar)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Resimler - 1 ay
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    
+    # CSS ve JavaScript - 1 hafta
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    
+    # Fontlar - 1 ay
+    ExpiresByType font/ttf "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
+
+# GZIP sıkıştırma
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+</IfModule>
+
+# UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# MIME types
+<IfModule mod_mime.c>
+    AddType application/javascript js
+    AddType text/css css
+    AddType image/svg+xml svg
+    AddType font/woff woff
+    AddType font/woff2 woff2
+</IfModule>
+
+# PHP dosyalarının indirilmesini engelle
+<Files *.php>
+    ForceType application/x-httpd-php
+</Files>
+
+# Belirli user agent'ları engelle (bot koruması)
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+    RewriteCond %{HTTP_USER_AGENT} ^(.*)(libwww-perl|wget|python|nikto|scan|java|winhttp|clshttp|loader) [NC]
+    RewriteCond %{REQUEST_URI} !^/robots\.txt$
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# Error pages (opsiyonel)
+# ErrorDocument 404 /404.php
+# ErrorDocument 500 /500.php
