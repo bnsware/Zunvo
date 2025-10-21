@@ -21,7 +21,7 @@
 
 Zunvo şu anda aktif olarak geliştirilmektedir. İlk kararlı sürüm yakında yayınlanacak!
 
-**🎯 Tahmini İlk Sürüm:** 2025 Q2
+**🎯 Tahmini İlk Sürüm:** 2026 Q2
 
 **⭐ Projeyi takip edin ve ilk sürümden haberdar olun!**
 
@@ -261,10 +261,10 @@ themes/my-theme/
 
 ## 💬 Topluluk & Destek
 
-- 💬 **Tartışmalar:** [GitHub Discussions](https://github.com/yourusername/zunvo/discussions)
-- 🐛 **Hata Bildirimi:** [GitHub Issues](https://github.com/yourusername/zunvo/issues)
-- 📧 **E-posta:** info@zunvo.org
-- 🌐 **Website:** https://zunvo.org (yakında)
+- 💬 **Tartışmalar:** [GitHub Discussions](https://github.com/bnsware/zunvo/discussions)
+- 🐛 **Hata Bildirimi:** [GitHub Issues](https://github.com/bnsware/zunvo/issues)
+- 📧 **E-posta:** info@vixware.net
+- 🌐 **Website:** https://zunvo.com (yakında)
 
 ---
 
@@ -274,7 +274,7 @@ themes/my-theme/
 Satır Sayısı:    ~15,000 (hedef)
 Dosya Sayısı:    ~150+
 Diller:          PHP, JavaScript, CSS
-Geliştirme Süresi: 6+ ay (devam ediyor)
+Geliştirme Süresi: (devam ediyor)
 Katkıda Bulunanlar: Bekliyor...
 ```
 
