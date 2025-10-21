@@ -332,7 +332,7 @@ Don't forget to give a ⭐ to support the project!
 
 **Build powerful platforms for communities with Zunvo** 🚀
 
-Made with ❤️ by the Zunvo Team
+Made with ❤️ by the bnsware
 
 [Website](https://zunvo.org) • [Twitter](https://twitter.com/zunvo) • [Discord](https://discord.gg/zunvo)
 
