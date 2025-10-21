@@ -83,12 +83,12 @@ Modern forum yazılımları ya çok karmaşık, ya çok pahalı ya da özgürlü
 
 ## 🗺️ Yol Haritası
 
-### ✅ Faz 1: Temel Altyapı (Tamamlanıyor)
+### ✅ Faz 1: Temel Altyapı (Tamamlandı)
 - [x] Proje mimarisi tasarımı
 - [x] MVC benzeri yapı oluşturma
-- [ ] Veritabanı şeması tasarımı
-- [ ] Core sistem bileşenleri
-- [ ] Routing sistemi
+- [x] Veritabanı şeması tasarımı
+- [x] Core sistem bileşenleri
+- [x] Routing sistemi
 
 ### 🔄 Faz 2: Kullanıcı Sistemi (Geliştiriliyor)
 - [ ] Kayıt ve giriş sistemi
