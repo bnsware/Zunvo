@@ -1,5 +1,7 @@
 <div align="center">
 
+[🇬🇧 English](README.md) | [🇹🇷 Türkçe](README.tr.md)
+
 # 🌊 Zunvo
 
 **Modern, Open Source Forum Software**
