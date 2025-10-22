@@ -90,22 +90,22 @@ Modern forum yazılımları ya çok karmaşık, ya çok pahalı ya da özgürlü
 - [x] Core sistem bileşenleri
 - [x] Routing sistemi
 
-### 🔄 Faz 2: Kullanıcı Sistemi (Geliştiriliyor)
-- [ ] Kayıt ve giriş sistemi
-- [ ] Email doğrulama
-- [ ] Şifre sıfırlama
-- [ ] Kullanıcı profilleri
-- [ ] Avatar yükleme
+### 🔄 Faz 2: Kullanıcı Sistemi (Tamamlandı)
+- [x] Kayıt ve giriş sistemi
+- [x] Email doğrulama
+- [x] Şifre sıfırlama
+- [x] Kullanıcı profilleri
+- [x] Avatar yükleme
 
-### 📋 Faz 3: Forum Özellikleri (Planlanıyor)
-- [ ] Kategori yönetimi
-- [ ] Konu oluşturma ve görüntüleme
-- [ ] Yorum sistemi
-- [ ] Upvote/Downvote mekanizması
-- [ ] Arama fonksiyonu
+### 📋 Faz 3: Forum Özellikleri (Tamamlandı)
+- [x] Kategori yönetimi
+- [x] Konu oluşturma ve görüntüleme
+- [x] Yorum sistemi
+- [x] Upvote/Downvote mekanizması
+- [x] Arama fonksiyonu
 
-### 🚀 Faz 4: İleri Özellikler (Planlanıyor)
-- [ ] Bildirim sistemi
+### 🚀 Faz 4: İleri Özellikler (Geliştiriliyor)
+- [x] Bildirim sistemi
 - [ ] Etiket sistemi
 - [ ] Moderasyon araçları
 - [ ] Kullanıcı rozetleri
