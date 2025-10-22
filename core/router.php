@@ -58,6 +58,17 @@ function parse_url_route() {
 function handle_route() {
     $route = parse_url_route();
     
+    // Önce özel route'ları kontrol et
+    $request_uri = $_SERVER['REQUEST_URI'];
+    $base_path = parse_url(SITE_URL, PHP_URL_PATH) ?? '/';
+    $request_uri = substr($request_uri, strlen($base_path));
+    $request_uri = trim(strtok($request_uri, '?'), '/');
+    
+    $custom_route = match_custom_route($request_uri);
+    if ($custom_route) {
+        $route = $custom_route;
+    }
+    
     // Controller dosyasının yolu
     $controller_file = APP_PATH . '/controllers/' . $route['controller'] . '.php';
     
