@@ -90,21 +90,21 @@ Modern forum software is either too complex, too expensive, or restricts your fr
 - [x] Core system components
 - [x] Routing system
 
-### 🔄 Phase 2: User System (Completed)
+### ✅ Phase 2: User System (Completed)
 - [x] Registration and login system
 - [x] Email verification
 - [x] Password reset
 - [x] User profiles
 - [x] Avatar upload
 
-### 📋 Phase 3: Forum Features (Completed)
+### ✅ Phase 3: Forum Features (Completed)
 - [x] Category management
 - [x] Topic creation and viewing
 - [x] Comment system
 - [x] Upvote/Downvote mechanism
 - [x] Search functionality
 
-### 🚀 Phase 4: Advanced Features (In Development)
+### 🔄 Phase 4: Advanced Features (In Development)
 - [x] Notification system
 - [ ] Tag system
 - [ ] Moderation tools
