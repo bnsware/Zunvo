@@ -6,6 +6,9 @@
  * Gönderi/yorum işlemleri
  */
 
+// Notification model'i dahil et
+require_once __DIR__ . '/notification.php';
+
 /**
  * ID'ye göre post getir
  * @param int $post_id Post ID
@@ -321,18 +324,4 @@ function get_user_vote($post_id, $user_id) {
     );
     
     return $vote ? $vote['vote_type'] : null;
-}
-
-/**
- * Bildirim oluştur (helper)
- * @param int $user_id Kullanıcı ID
- * @param string $type Bildirim tipi
- * @param string $message Mesaj
- * @param string $link Link
- */
-function create_notification($user_id, $type, $message, $link) {
-    db_insert(
-        "INSERT INTO notifications (user_id, type, message, link, created_at) VALUES (?, ?, ?, ?, NOW())",
-        [$user_id, $type, $message, $link]
-    );
 }
