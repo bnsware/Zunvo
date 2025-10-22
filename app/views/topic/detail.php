@@ -343,7 +343,8 @@ $is_author = $current_user && $current_user['id'] === $topic['user_id'];
                     
                     <?php if ($index > 0 && $is_author && !$post['is_solution']): ?>
                         <button class="btn btn-primary btn-small" 
-                                data-mark-solution="<?php echo $post['id']; ?>">
+                                data-mark-solution="<?php echo $post['id']; ?>"
+                                data-topic-id="<?php echo $topic['id']; ?>">
                             ✓ Çözüm Olarak İşaretle
                         </button>
                     <?php endif; ?>
@@ -396,13 +397,3 @@ $is_author = $current_user && $current_user['id'] === $topic['user_id'];
         <p>🔒 Bu konu kilitlenmiştir. Yeni yanıt yazılamaz.</p>
     </div>
 <?php endif; ?>
-
-<script>
-// Vote butonları için basit AJAX
-document.querySelectorAll('.vote-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        // AJAX ile vote işlemi yapılacak (Faz 4'te)
-        alert('Vote sistemi Faz 4\'te eklenecek');
-    });
-});
-</script>
