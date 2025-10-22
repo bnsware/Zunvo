@@ -10,6 +10,7 @@
 require_once APP_PATH . '/models/category.php';
 require_once APP_PATH . '/models/topic.php';
 require_once APP_PATH . '/models/post.php';
+require_once APP_PATH . '/models/notification.php';
 
 /**
  * Tüm konuları listele
