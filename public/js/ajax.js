@@ -151,10 +151,34 @@ const NotificationAPI = {
     },
     
     /**
+     * Bildirimi sil
+     */
+    delete: async function(notificationId) {
+        return ajaxRequest(`${BASE_URL}/notification/delete`, 'POST', {
+            notification_id: notificationId
+        });
+    },
+    
+    /**
+     * Tüm bildirimleri sil
+     */
+    deleteAll: async function() {
+        return ajaxRequest(`${BASE_URL}/notification/delete-all`, 'POST');
+    },
+    
+    /**
      * Okunmamış bildirim sayısını al
      */
     getUnreadCount: async function() {
         return ajaxRequest(`${BASE_URL}/notification/unread-count`);
+    },
+    
+    /**
+     * Bildirim polling (gerçek zamanlı güncelleme)
+     */
+    poll: async function(lastCheck = null) {
+        const url = `${BASE_URL}/notification/poll${lastCheck ? '?last_check=' + lastCheck : ''}`;
+        return ajaxRequest(url);
     }
 };
 
