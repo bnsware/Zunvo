@@ -57,5 +57,15 @@ add_route('vote/get', 'vote', 'get');
 add_route('vote/stats', 'vote', 'stats');
 add_route('vote/batch', 'vote', 'batch');
 
+// Notification route'ları
+add_route('notification/get', 'notification', 'get');
+add_route('notification/unread-count', 'notification', 'unread_count');
+add_route('notification/mark-read', 'notification', 'mark_read');
+add_route('notification/mark-all-read', 'notification', 'mark_all_read');
+add_route('notification/delete', 'notification', 'delete');
+add_route('notification/poll', 'notification', 'poll');
+add_route('bildirimler', 'notification', 'index');
+add_route('bildirim/ayarlar', 'notification', 'settings');
+
 // Route'u işle ve ilgili controller'ı çalıştır
 handle_route();
