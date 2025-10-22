@@ -27,5 +27,35 @@ if (is_logged_in()) {
 // Özel route'ları tanımla (opsiyonel)
 // Örnek: add_route('/konu/{slug}', 'topic', 'show');
 
+// Auth route'ları
+add_route('giris', 'auth', 'login');
+add_route('kayit', 'auth', 'register');
+add_route('cikis', 'auth', 'logout');
+add_route('dogrula/{token}', 'auth', 'verify');
+add_route('sifremi-unuttum', 'auth', 'forgot_password');
+add_route('sifre-sifirla/{token}', 'auth', 'reset_password');
+add_route('profil/{username}', 'auth', 'profile');
+add_route('profil-duzenle', 'auth', 'edit_profile');
+
+// Topic route'ları
+add_route('konular', 'topic', 'index');
+add_route('konu/olustur', 'topic', 'create');
+add_route('konu/{slug}', 'topic', 'show');
+add_route('konu/duzenle/{slug}', 'topic', 'edit');
+add_route('kategori/{slug}', 'topic', 'category');
+add_route('arama', 'topic', 'search');
+
+// AJAX route'ları
+add_route('topic/add-post', 'topic', 'add_post');
+add_route('topic/edit-post', 'topic', 'edit_post');
+add_route('topic/delete-post', 'topic', 'delete_post');
+add_route('topic/mark-solution', 'topic', 'mark_solution');
+
+// Vote route'ları
+add_route('vote/submit', 'vote', 'submit');
+add_route('vote/get', 'vote', 'get');
+add_route('vote/stats', 'vote', 'stats');
+add_route('vote/batch', 'vote', 'batch');
+
 // Route'u işle ve ilgili controller'ı çalıştır
 handle_route();
