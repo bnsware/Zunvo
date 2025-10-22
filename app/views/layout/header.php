@@ -110,6 +110,130 @@ $site_name = get_setting('site_name', SITE_NAME);
             gap: 8px;
             cursor: pointer;
         }
+        .notification-bell {
+            position: relative;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        .notification-bell:hover {
+            background: #f0f0f0;
+        }
+        .notification-badge {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background: #dc3545;
+            color: white;
+            border-radius: 10px;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-weight: bold;
+            min-width: 18px;
+            text-align: center;
+        }
+        .notification-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 380px;
+            max-height: 500px;
+            overflow: hidden;
+            display: none;
+            margin-top: 10px;
+            z-index: 1000;
+        }
+        .notification-dropdown.show {
+            display: block;
+        }
+        .notification-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .notification-header h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .mark-all-read {
+            color: #007bff;
+            font-size: 13px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .mark-all-read:hover {
+            text-decoration: underline;
+        }
+        .notification-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .notification-item {
+            display: flex;
+            gap: 12px;
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .notification-item:hover {
+            background: #f8f9fa;
+        }
+        .notification-item.unread {
+            background: #e3f2fd;
+        }
+        .notification-item.unread:hover {
+            background: #d1e7fc;
+        }
+        .notification-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .notification-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .notification-content a,
+        .notification-content span {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .notification-content a:hover {
+            color: #007bff;
+        }
+        .notification-time {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+        }
+        .notification-empty {
+            padding: 40px 20px;
+            text-align: center;
+            color: #999;
+        }
+        .notification-footer {
+            padding: 12px 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .notification-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -136,6 +260,26 @@ $site_name = get_setting('site_name', SITE_NAME);
             <div class="navbar-user">
                 <?php if ($current_user): ?>
                     <a href="<?php echo url('/konu/olustur'); ?>" class="btn btn-primary">+ Konu Aç</a>
+                    
+                    <!-- Bildirim Bell -->
+                    <div class="notification-bell" id="notification-bell">
+                        🔔
+                        <span class="notification-badge" id="notification-badge" style="display: none;">0</span>
+                    </div>
+                    
+                    <!-- Bildirim Dropdown -->
+                    <div class="notification-dropdown" id="notification-dropdown">
+                        <div class="notification-header">
+                            <h3>Bildirimler</h3>
+                            <a href="#" class="mark-all-read" id="mark-all-read">Tümünü okundu işaretle</a>
+                        </div>
+                        <div class="notification-list" id="notification-list">
+                            <div class="notification-empty">Yükleniyor...</div>
+                        </div>
+                        <div class="notification-footer">
+                            <a href="<?php echo url('/bildirimler'); ?>">Tüm bildirimleri gör</a>
+                        </div>
+                    </div>
                     
                     <div class="user-dropdown">
                         <div class="user-info">
