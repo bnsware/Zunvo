@@ -14,6 +14,8 @@ $site_name = get_setting('site_name', SITE_NAME);
     <title><?php echo isset($title) ? escape($title) . ' - ' : ''; ?><?php echo escape($site_name); ?></title>
     <meta name="description" content="<?php echo escape(get_setting('site_description', SITE_DESCRIPTION)); ?>">
     <link rel="stylesheet" href="<?php echo asset('css/style.css'); ?>">
+    <script src="<?php echo asset('js/ajax.js'); ?>" defer></script>
+    <script src="<?php echo asset('js/main.js'); ?>" defer></script>
     <style>
         * {
             margin: 0;
