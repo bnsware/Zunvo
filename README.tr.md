@@ -1,5 +1,7 @@
 <div align="center">
 
+[![badge](https://rozet.vixware.net/icon/coffee/badge/Buy%20Me%20a%20Coffee/yellow?style=single)](https://www.buymeacoffee.com/bnsware)
+
 [🇬🇧 English](README.md) | [🇹🇷 Türkçe](README.tr.md)
 
 # 🌊 Zunvo
