@@ -1,0 +1,13 @@
+{
+    "name": "Starter (şablon)",
+    "slug": "_starter",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Geliştiriciler için kopyala-yapıştır başlangıç teması — etkinleştirmeyin",
+    "hidden": true,
+    "extends": "default",
+    "inherit_styles": false,
+    "body_class": "theme-starter",
+    "skeleton": "starter",
+    "role": "template"
+}

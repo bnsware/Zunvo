@@ -1,0 +1,14 @@
+{
+    "name": "Bahset Bildirimi",
+    "slug": "bahset-bildir",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Gönderilerde @kullanici etiketlendiğinde bildirim gönderir",
+    "settings": {
+        "message": {
+            "label": "Bildirim Mesajı ({sender} = gönderen)",
+            "type": "text",
+            "default": "{sender} sizi bir gönderide bahsetti"
+        }
+    }
+}

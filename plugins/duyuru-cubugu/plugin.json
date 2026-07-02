@@ -1,0 +1,29 @@
+{
+    "name": "Duyuru Çubuğu",
+    "slug": "duyuru-cubugu",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Sitenin üst kısmında özelleştirilebilir duyuru bandı gösterir",
+    "settings": {
+        "message": {
+            "label": "Duyuru Metni",
+            "type": "textarea",
+            "default": "Forumumuza hoş geldiniz! Kuralları okumayı unutmayın."
+        },
+        "link_url": {
+            "label": "Bağlantı URL (isteğe bağlı)",
+            "type": "text",
+            "default": ""
+        },
+        "bg_color": {
+            "label": "Arka Plan Rengi (hex)",
+            "type": "text",
+            "default": "#2563eb"
+        },
+        "text_color": {
+            "label": "Yazı Rengi (hex)",
+            "type": "text",
+            "default": "#ffffff"
+        }
+    }
+}

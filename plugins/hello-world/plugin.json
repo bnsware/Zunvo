@@ -1,0 +1,19 @@
+{
+    "name": "Hello World",
+    "slug": "hello-world",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Örnek eklenti — yeni üyelere hoş geldin bildirimi gönderir",
+    "settings": {
+        "info_about": {
+            "label": "Bu eklenti hakkında",
+            "type": "info",
+            "default": "Bu bir örnek eklentidir. Geliştiriciler için referans olarak kullanılabilir.\n\nNe yapar?\n• Yeni kayıt olan kullanıcılara sistem bildirimi gönderir\n• after_user_register hook'unu kullanır\n\nKendi eklentinizi yazmak için plugins/ klasöründeki dosya yapısını inceleyin."
+        },
+        "info_hooks": {
+            "label": "Kullanılan hook'lar",
+            "type": "info",
+            "default": "after_user_register — kullanıcı kaydı sonrası"
+        }
+    }
+}

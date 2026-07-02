@@ -1,0 +1,11 @@
+{
+    "name": "Varsayılan",
+    "slug": "default",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Ana parent tema — tüm forum şablonları ve stiller",
+    "inherit_styles": true,
+    "body_class": "theme-default",
+    "skeleton": "classic-topnav",
+    "role": "parent"
+}

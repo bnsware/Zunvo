@@ -1,0 +1,19 @@
+{
+    "name": "Gönderi Koruması",
+    "slug": "gonderi-koruma",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Hızlı gönderi ve tekrarlayan içerik spamını engeller",
+    "settings": {
+        "max_per_minute": {
+            "label": "Dakikada İzin Verilen Max Gönderi",
+            "type": "text",
+            "default": "5"
+        },
+        "block_duplicates": {
+            "label": "Aynı İçeriği Tekrar Engelle",
+            "type": "toggle",
+            "default": "1"
+        }
+    }
+}

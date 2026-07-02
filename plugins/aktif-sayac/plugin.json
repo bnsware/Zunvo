@@ -1,0 +1,24 @@
+{
+    "name": "Çevrimiçi Sayacı",
+    "slug": "aktif-sayac",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Son dakikalarda aktif olan üyeleri ana sayfada gösterir",
+    "settings": {
+        "minutes": {
+            "label": "Aktif Sayılma Süresi (dakika)",
+            "type": "text",
+            "default": "15"
+        },
+        "show_names": {
+            "label": "Kullanıcı Adlarını Listele",
+            "type": "toggle",
+            "default": "1"
+        },
+        "name_limit": {
+            "label": "Listelenecek Max İsim",
+            "type": "text",
+            "default": "8"
+        }
+    }
+}

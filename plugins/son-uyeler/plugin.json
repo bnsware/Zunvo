@@ -1,0 +1,19 @@
+{
+    "name": "Son Üyeler",
+    "slug": "son-uyeler",
+    "version": "1.0.0",
+    "author": "Zunvo",
+    "description": "Ana sayfa kenar çubuğunda son kayıt olan üyeleri listeler",
+    "settings": {
+        "limit": {
+            "label": "Gösterilecek Üye Sayısı",
+            "type": "text",
+            "default": "5"
+        },
+        "show_date": {
+            "label": "Kayıt Tarihini Göster",
+            "type": "toggle",
+            "default": "1"
+        }
+    }
+}

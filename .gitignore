@@ -1,0 +1,50 @@
+# Yerel yapılandırma (örnek dosyalar repoda kalır)
+config/config.php
+config/database.php
+config/detect.php
+
+# Kurulum kilidi ve çalışma zamanı verileri
+storage/install.lock
+storage/cache/*
+!storage/cache/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/sessions/*
+!storage/sessions/.gitkeep
+storage/temp/*
+!storage/temp/.gitkeep
+
+# Kullanıcı yüklemeleri
+public/uploads/avatars/*
+!public/uploads/avatars/.gitkeep
+public/uploads/attachments/*
+!public/uploads/attachments/.gitkeep
+
+# IDE ve editör
+.cursor/
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Log ve geçici dosyalar
+*.log
+debug-*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Paket / bağımlılık (ileride eklenirse)
+node_modules/
+vendor/
+
+# Ortam dosyaları
+.env
+.env.*
